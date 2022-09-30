@@ -2,7 +2,7 @@ import React from "react";
 
 const Questions = () => {
   return (
-    <div>
+    <div className="mb-10">
       <h1 className="text-xl font-bold mb-5">Questions</h1>
       <div className="grid grid-cols-1 gap-4">
         <article className="p-3 bg-white rounded-xl shadow-xl">
@@ -15,10 +15,12 @@ const Questions = () => {
             when your data changes.
           </p>
         </article>
-        <article>
-          <h1>Difference between props and state ?</h1>
-          <h1>State:</h1>
-          <ul>
+        <article className="p-3 bg-white rounded-xl shadow-xl">
+          <h1 className="text-lg font-semibold">
+            Difference between props and state ?
+          </h1>
+          <h1 className="text-lg font-semibold">State:</h1>
+          <ul className="text-lg">
             <li>1. States are mutable.</li>
             <li>
               2. States are associated with the individual components can't be
@@ -26,8 +28,8 @@ const Questions = () => {
             </li>
             <li>3. States are initialize on component mount.</li>
           </ul>
-          <h1>Props:</h1>
-          <ul>
+          <h1 className="text-lg font-semibold">Props:</h1>
+          <ul className="text-lg">
             <li>1. Props are immutable.</li>
             <li>2. You can pass props between components.</li>
             <li>
@@ -37,9 +39,11 @@ const Questions = () => {
             </li>
           </ul>
         </article>
-        <article>
-          <h1>Uses of useeffect other than data loading ?</h1>
-          <ul>
+        <article className="p-3 bg-white rounded-xl shadow-xl">
+          <h1 className="text-lg font-semibold">
+            Uses of useeffect other than data loading ?
+          </h1>
+          <ul className="text-lg">
             <li>Reading from local storage.</li>
             <li>Registering event listeners.</li>
             <li>Deregistering event listeners.</li>

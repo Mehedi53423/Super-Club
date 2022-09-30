@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import profilePic from "../utilities/profile.jpg";
 
 const ActivityControl = (props) => {
@@ -6,6 +8,7 @@ const ActivityControl = (props) => {
   const clickHandler = (time) => {
     setBreakTime(time);
   };
+  const notify = () => toast("Activity Completed");
   localStorage.setItem("breakTime", breakTime);
   return (
     <div className="border h-screen sticky top-0 bg-white shadow-lg">
@@ -94,17 +97,31 @@ const ActivityControl = (props) => {
         <h1 className="text-xl font-bold mb-5">Exercise Details</h1>
         <div className="flex justify-between text-lg font-semibold mb-5 p-5 bg-slate-200 rounded-xl">
           <h1>Exercise Time</h1>
-          <h1>{props.exerciseTime} seconds</h1>
+          <h1 className="text-gray-500">{props.exerciseTime} seconds</h1>
         </div>
         <div className="flex justify-between text-lg font-semibold mb-5 p-5 bg-slate-200 rounded-xl">
           <h1>Break Time</h1>
-          <h1>{breakTime} seconds</h1>
+          <h1 className="text-gray-500">{breakTime} seconds</h1>
         </div>
       </div>
       <div className="text-center">
-        <button className="Activity Completed text-lg text-white font-semibold bg-indigo-500 py-2 w-11/12 rounded-xl hover:bg-indigo-600">
+        <button
+          className="Activity Completed text-lg text-white font-semibold bg-indigo-500 py-2 w-11/12 rounded-xl hover:bg-indigo-600"
+          onClick={notify}
+        >
           Activity Completed
         </button>
+        <ToastContainer
+          position="bottom-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+        />
       </div>
     </div>
   );

@@ -2,7 +2,7 @@
   {
     "id": "1",
     "name": "Running",
-    "about": "",
+    "about": "Running is a full body-movement exercise. It allows you to burn a huge number of calories very quickly. Though the amount ...",
     "forAge": "10 - 40",
     "timeRequerd": "30",
     "img": "https://images.unsplash.com/photo-1483721310020-03333e577078?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80"
@@ -10,40 +10,40 @@
   {
     "id": "2",
     "name": "Weightlifting",
-    "about": "",
-    "forAge": "10 - 40",
+    "about": "Weight lifting is a common type of strength training for developing the strength and size of skeletal muscles. It uses ...",
+    "forAge": "20 - 30",
     "timeRequerd": "10",
     "img": "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
   },
   {
     "id": "3",
     "name": "Chest Workout",
-    "about": "",
-    "forAge": "10 - 40",
+    "about": "The chest muscles could be considered a defining part of strength anatomy. They are involved in actions such as squeezing ...",
+    "forAge": "18 - 40",
     "timeRequerd": "15",
     "img": "https://images.unsplash.com/photo-1597452485669-2c7bb5fef90d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
   },
   {
     "id": "4",
     "name": "Chrossfit",
-    "about": "",
-    "forAge": "10 - 40",
+    "about": "A form of high intensity interval training, CrossFit is a strength and conditioning workout that is made up of functional ...",
+    "forAge": "18 - 40",
     "timeRequerd": "20",
     "img": "https://images.unsplash.com/photo-1601422407692-ec4eeec1d9b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80"
   },
   {
     "id": "5",
     "name": "Stretch",
-    "about": "",
-    "forAge": "10 - 40",
+    "about": "Stretching is a form of physical exercise in which a specific muscle or tendon (or muscle group) is deliberately flexed ...",
+    "forAge": "16 - 40",
     "timeRequerd": "35",
     "img": "https://images.unsplash.com/photo-1562771379-eafdca7a02f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
   },
   {
     "id": "6",
     "name": "Yoga",
-    "about": "",
-    "forAge": "10 - 40",
+    "about": "Yoga offers physical and mental health benefits for people of all ages. And, if you’re going through an illness, recovering from ... ",
+    "forAge": "10 - 60",
     "timeRequerd": "50",
     "img": "https://images.unsplash.com/photo-1549576490-b0b4831ef60a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
   }
