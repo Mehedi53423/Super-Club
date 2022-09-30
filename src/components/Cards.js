@@ -1,7 +1,9 @@
 import React from "react";
 
 const Cards = (props) => {
+  const { handleClick } = props;
   const { img, name, about, forAge, timeRequerd } = props.activity;
+
   return (
     <div>
       <div className="max-w-sm bg-white rounded-lg shadow-lg">
@@ -15,7 +17,10 @@ const Cards = (props) => {
           <p className="mb-3 font-normal text-gray-700 text-left">
             {timeRequerd}
           </p>
-          <button className="text-xl font-bold py-2 w-1/2 bg-indigo-500 rounded-xl">
+          <button
+            className="text-xl font-bold py-2 w-1/2 bg-indigo-500 rounded-xl"
+            onClick={() => handleClick(timeRequerd)}
+          >
             Add To List
           </button>
         </div>

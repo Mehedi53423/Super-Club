@@ -1,7 +1,7 @@
 import React from "react";
 import profilePic from "../utilities/profile.jpg";
 
-const ActivityControl = () => {
+const ActivityControl = (props) => {
   return (
     <div className="border h-screen sticky top-0 bg-white shadow-lg">
       <div className="flex p-5">
@@ -74,7 +74,7 @@ const ActivityControl = () => {
         <h1 className="text-xl font-bold mb-5">Exercise Details</h1>
         <div className="flex justify-between text-lg font-semibold mb-5 p-5 bg-slate-200 rounded-xl">
           <h1>Exercise Time</h1>
-          <h1>seconds</h1>
+          <h1>{props.exerciseTime} seconds</h1>
         </div>
         <div className="flex justify-between text-lg font-semibold mb-5 p-5 bg-slate-200 rounded-xl">
           <h1>Break Time</h1>
