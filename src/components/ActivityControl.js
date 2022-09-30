@@ -11,7 +11,7 @@ const ActivityControl = (props) => {
   const notify = () => toast("Activity Completed");
   localStorage.setItem("breakTime", breakTime);
   return (
-    <div className="border h-screen sticky top-0 bg-white shadow-lg">
+    <div className="border md:h-screen md:sticky md:top-0 bg-white shadow-lg">
       <div className="flex p-5">
         <img src={profilePic} alt="Profile" className="h-20 rounded-full" />
         <div className="pl-5 pt-5">
@@ -40,7 +40,7 @@ const ActivityControl = (props) => {
           </h1>
         </div>
       </div>
-      <div className="flex mx-5 px-10 py-5 justify-between bg-slate-200 rounded-xl text-center">
+      <div className="md:flex mx-5 px-10 py-5 justify-between bg-slate-200 rounded-xl text-center">
         <div>
           <h1>
             <span className="text-2xl font-bold">80</span>kg
@@ -60,33 +60,33 @@ const ActivityControl = (props) => {
       </div>
       <div className="mx-5 mt-5">
         <h1 className="text-xl font-bold mb-5">Add A Break</h1>
-        <div className="flex py-5 px-10 justify-between bg-slate-200 rounded-xl text-center text-lg font-semibold">
+        <div className="md:flex md:py-5 md:px-10 justify-between bg-slate-200 rounded-xl text-center md:text-lg text-sm font-semibold">
           <div
-            className="p-3 bg-white rounded-full hover:bg-indigo-500 hover:text-white cursor-pointer"
+            className="p-3 md:bg-white md:rounded-full hover:bg-indigo-500 hover:text-white cursor-pointer"
             onClick={() => clickHandler(10)}
           >
             <h1>10s</h1>
           </div>
           <div
-            className="p-3 bg-white rounded-full hover:bg-indigo-500 hover:text-white cursor-pointer"
+            className="p-3 md:bg-white md:rounded-full hover:bg-indigo-500 hover:text-white cursor-pointer"
             onClick={() => clickHandler(20)}
           >
             <h1>20s</h1>
           </div>
           <div
-            className="p-3 bg-white rounded-full hover:bg-indigo-500 hover:text-white cursor-pointer"
+            className="p-3 md:bg-white md:rounded-full hover:bg-indigo-500 hover:text-white cursor-pointer"
             onClick={() => clickHandler(30)}
           >
             <h1>30s</h1>
           </div>
           <div
-            className="p-3 bg-white rounded-full hover:bg-indigo-500 hover:text-white cursor-pointer"
+            className="p-3 md:bg-white md:rounded-full hover:bg-indigo-500 hover:text-white cursor-pointer"
             onClick={() => clickHandler(40)}
           >
             <h1>40s</h1>
           </div>
           <div
-            className="p-3 bg-white rounded-full hover:bg-indigo-500 hover:text-white cursor-pointer"
+            className="p-3 md:bg-white md:rounded-full hover:bg-indigo-500 hover:text-white cursor-pointer"
             onClick={() => clickHandler(50)}
           >
             <h1>50s</h1>
@@ -94,7 +94,9 @@ const ActivityControl = (props) => {
         </div>
       </div>
       <div className="mx-5 mt-5">
-        <h1 className="text-xl font-bold mb-5">Exercise Details</h1>
+        <h1 className="text-xl font-bold mb-5 pt-10 md:pt-0">
+          Exercise Details
+        </h1>
         <div className="flex justify-between text-lg font-semibold mb-5 p-5 bg-slate-200 rounded-xl">
           <h1>Exercise Time</h1>
           <h1 className="text-gray-500">{props.exerciseTime} seconds</h1>
@@ -104,7 +106,7 @@ const ActivityControl = (props) => {
           <h1 className="text-gray-500">{breakTime} seconds</h1>
         </div>
       </div>
-      <div className="text-center">
+      <div className="text-center mb-10">
         <button
           className="Activity Completed text-lg text-white font-semibold bg-indigo-500 py-2 w-11/12 rounded-xl hover:bg-indigo-600"
           onClick={notify}

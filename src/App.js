@@ -11,12 +11,12 @@ function App() {
   };
 
   return (
-    <div className="flex bg-slate-200">
-      <div className="w-3/4 border md:mx-10 md:px-28">
+    <div className="md:flex bg-slate-200">
+      <div className="md:w-3/4 border md:mx-10 md:px-28 px-5">
         <Header></Header>
         <Content handleClick={handleClick}></Content>
       </div>
-      <div className="w-1/4">
+      <div className="md:w-1/4">
         <ActivityControl exerciseTime={exerciseTime}></ActivityControl>
       </div>
     </div>
