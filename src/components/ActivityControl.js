@@ -70,6 +70,22 @@ const ActivityControl = () => {
           </div>
         </div>
       </div>
+      <div className="mx-5 mt-5">
+        <h1 className="text-xl font-bold mb-5">Exercise Details</h1>
+        <div className="flex justify-between text-lg font-semibold mb-5 p-5 bg-slate-200 rounded-xl">
+          <h1>Exercise Time</h1>
+          <h1>seconds</h1>
+        </div>
+        <div className="flex justify-between text-lg font-semibold mb-5 p-5 bg-slate-200 rounded-xl">
+          <h1>Break Time</h1>
+          <h1>seconds</h1>
+        </div>
+      </div>
+      <div className="text-center">
+        <button className="Activity Completed text-lg text-white font-semibold bg-indigo-500 py-2 w-11/12 rounded-xl">
+          Activity Completed
+        </button>
+      </div>
     </div>
   );
 };
