@@ -9,11 +9,15 @@ const Content = () => {
       .then((data) => setActivities(data));
   }, []);
   return (
-    <div className="container mx-auto">
+    <div className="">
       <h1 className="text-xl font-bold my-2 py-2">Select Today's Activity</h1>
-      {activities.map((activity) => (
-        <Cards key={activity.id} activity={activity}></Cards>
-      ))}
+      <section className="flex">
+        <div className="grid grid-cols-3 gap-4">
+          {activities.map((activity) => (
+            <Cards key={activity.id} activity={activity}></Cards>
+          ))}
+        </div>
+      </section>
     </div>
   );
 };
