@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "name": "Running",
+    "about": "",
+    "forAge": "10 - 40",
+    "timeRequerd": "30",
+    "img": "https://images.unsplash.com/photo-1483721310020-03333e577078?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80"
+  },
+  {
+    "id": "2",
+    "name": "Weightlifting",
+    "about": "",
+    "forAge": "10 - 40",
+    "timeRequerd": "30",
+    "img": "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+  },
+  {
+    "id": "3",
+    "name": "Chest Workout",
+    "about": "",
+    "forAge": "10 - 40",
+    "timeRequerd": "30",
+    "img": "https://images.unsplash.com/photo-1597452485669-2c7bb5fef90d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+  },
+  {
+    "id": "4",
+    "name": "Chrossfit",
+    "about": "Running",
+    "forAge": "10 - 40",
+    "timeRequerd": "30",
+    "img": "https://images.unsplash.com/photo-1601422407692-ec4eeec1d9b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80"
+  },
+  {
+    "id": "5",
+    "name": "Stretch",
+    "about": "",
+    "forAge": "10 - 40",
+    "timeRequerd": "30",
+    "img": "https://images.unsplash.com/photo-1562771379-eafdca7a02f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+  },
+  {
+    "id": "6",
+    "name": "Yoga",
+    "about": "",
+    "forAge": "10 - 40",
+    "timeRequerd": "30",
+    "img": "https://images.unsplash.com/photo-1549576490-b0b4831ef60a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+  }
+]

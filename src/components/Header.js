@@ -2,7 +2,7 @@ import React from "react";
 
 function Header() {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto py-2">
       <h1 className="flex text-3xl font-bold text-cyan-400">
         <svg
           xmlns="http://www.w3.org/2000/svg"
