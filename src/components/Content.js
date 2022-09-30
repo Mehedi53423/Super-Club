@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Cards from "./Cards";
+import Questions from "./Questions";
 
 const Content = (props) => {
   const [activities, setActivities] = useState([]);
@@ -23,6 +24,7 @@ const Content = (props) => {
           ))}
         </div>
       </section>
+      <Questions></Questions>
     </div>
   );
 };
