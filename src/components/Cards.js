@@ -18,7 +18,7 @@ const Cards = (props) => {
             {timeRequerd}
           </p>
           <button
-            className="text-xl font-bold py-2 w-1/2 bg-indigo-500 rounded-xl"
+            className="text-xl text-white font-bold py-2 w-1/2 bg-indigo-500 rounded-xl hover:bg-indigo-600"
             onClick={() => handleClick(timeRequerd)}
           >
             Add To List

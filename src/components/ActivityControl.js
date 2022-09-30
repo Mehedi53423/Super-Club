@@ -6,6 +6,7 @@ const ActivityControl = (props) => {
   const clickHandler = (time) => {
     setBreakTime(time);
   };
+  localStorage.setItem("breakTime", breakTime);
   return (
     <div className="border h-screen sticky top-0 bg-white shadow-lg">
       <div className="flex p-5">
@@ -101,7 +102,7 @@ const ActivityControl = (props) => {
         </div>
       </div>
       <div className="text-center">
-        <button className="Activity Completed text-lg text-white font-semibold bg-indigo-500 py-2 w-11/12 rounded-xl">
+        <button className="Activity Completed text-lg text-white font-semibold bg-indigo-500 py-2 w-11/12 rounded-xl hover:bg-indigo-600">
           Activity Completed
         </button>
       </div>
