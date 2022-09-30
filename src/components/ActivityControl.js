@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import profilePic from "../utilities/profile.jpg";
 
 const ActivityControl = (props) => {
+  const [breakTime, setBreakTime] = useState(0);
+  const clickHandler = (time) => {
+    setBreakTime(time);
+  };
   return (
     <div className="border h-screen sticky top-0 bg-white shadow-lg">
       <div className="flex p-5">
@@ -53,19 +57,34 @@ const ActivityControl = (props) => {
       <div className="mx-5 mt-5">
         <h1 className="text-xl font-bold mb-5">Add A Break</h1>
         <div className="flex py-5 px-10 justify-between bg-slate-200 rounded-xl text-center text-lg font-semibold">
-          <div className="p-3 bg-white rounded-full">
+          <div
+            className="p-3 bg-white rounded-full hover:bg-indigo-500 hover:text-white cursor-pointer"
+            onClick={() => clickHandler(10)}
+          >
             <h1>10s</h1>
           </div>
-          <div className="p-3 bg-white rounded-full">
+          <div
+            className="p-3 bg-white rounded-full hover:bg-indigo-500 hover:text-white cursor-pointer"
+            onClick={() => clickHandler(20)}
+          >
             <h1>20s</h1>
           </div>
-          <div className="p-3 bg-white rounded-full">
+          <div
+            className="p-3 bg-white rounded-full hover:bg-indigo-500 hover:text-white cursor-pointer"
+            onClick={() => clickHandler(30)}
+          >
             <h1>30s</h1>
           </div>
-          <div className="p-3 bg-white rounded-full">
+          <div
+            className="p-3 bg-white rounded-full hover:bg-indigo-500 hover:text-white cursor-pointer"
+            onClick={() => clickHandler(40)}
+          >
             <h1>40s</h1>
           </div>
-          <div className="p-3 bg-white rounded-full">
+          <div
+            className="p-3 bg-white rounded-full hover:bg-indigo-500 hover:text-white cursor-pointer"
+            onClick={() => clickHandler(50)}
+          >
             <h1>50s</h1>
           </div>
         </div>
@@ -78,7 +97,7 @@ const ActivityControl = (props) => {
         </div>
         <div className="flex justify-between text-lg font-semibold mb-5 p-5 bg-slate-200 rounded-xl">
           <h1>Break Time</h1>
-          <h1>seconds</h1>
+          <h1>{breakTime} seconds</h1>
         </div>
       </div>
       <div className="text-center">
